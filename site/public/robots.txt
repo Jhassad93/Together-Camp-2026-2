@@ -1,0 +1,5 @@
+# Política aprovada pelo responsável em 20/10/2026: liberar todos os robôs, inclusive os de IA.
+User-agent: *
+Allow: /
+
+Sitemap: https://togethercamp.vercel.app/sitemap.xml

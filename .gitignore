@@ -1,0 +1,23 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências e build
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+.wrangler/
+.open-next/
+
+# Sistema
+.DS_Store
+*.log
+
+# Arquivos locais do projeto (não versionar)
+*.tgz
+*.af
+*.pdf
+KIT_COMPLETO.md

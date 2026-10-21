@@ -1,0 +1,10 @@
+// Revelação dos pregadores: preencha nome, igreja e foto no dia de cada revelação.
+// Foto: PNG com fundo transparente, busto, ~800x1000 px, em public/pregadores/ (ex.: "/pregadores/1.png").
+// Enquanto "nome" estiver vazio, aparece a silhueta e a placa mostra a data.
+export type Pregador = { data: string; dataISO: string; nome?: string; igreja?: string; foto?: string };
+
+export const PREGADORES: Pregador[] = [
+  { data: "23/out", dataISO: "2026-10-23" },
+  { data: "30/out", dataISO: "2026-10-30" },
+  { data: "06/nov", dataISO: "2026-11-06" },
+];
