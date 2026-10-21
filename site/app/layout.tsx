@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SITE_URL } from "@/lib";
 import CookieConsent from "@/components/CookieConsent";
+import { Analytics } from "@vercel/analytics/next";
 
 const title = "Together Camp 2026.2 · Ekballo · 19 a 22 de novembro";
 const description =
@@ -38,6 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <CookieConsent />
+        {/* Vercel Web Analytics: sem cookies e sem identificar o visitante; por isso não passa pelo banner */}
+        <Analytics />
       </body>
     </html>
   );

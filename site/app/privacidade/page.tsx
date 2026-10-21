@@ -18,6 +18,8 @@ export default function Privacidade() {
         <p>Este site não tem formulário e não guarda dados pessoais. A inscrição acontece no Google Formulários, que é um serviço do Google com regras próprias. Os dados enviados por lá são usados pela liderança só para organizar o acampamento.</p>
         <h2>Contador de vagas</h2>
         <p>Para mostrar quantas vagas restam, a página consulta um endereço do Google Apps Script mantido pela liderança, que devolve apenas um número. Nessa consulta, o seu navegador envia ao Google os dados técnicos de qualquer acesso à web (como o endereço IP). Nenhum dado seu é enviado ou guardado por nós. As fontes do site são hospedadas no próprio site, sem serviços externos.</p>
+        <h2>Medição de visitas</h2>
+        <p>Usamos o Vercel Web Analytics, da empresa que hospeda o site, para saber quantas pessoas visitam cada página e de onde vêm. Ele não usa cookies, não guarda o endereço IP e não identifica você: os números são agregados e descartam qualquer identificador em menos de 24 horas.</p>
         <h2>Cookies</h2>
         <p>Se você permitir no aviso de cookies, usamos o Google Analytics para contar visitas e cliques nos botões (inscrição, WhatsApp e compartilhamento). Sem a sua permissão, nenhum cookie de medição é carregado. Para mudar a escolha, limpe os dados do site no seu navegador.</p>
         <h2>Contato</h2>
