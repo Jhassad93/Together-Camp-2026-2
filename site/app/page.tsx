@@ -415,7 +415,7 @@ export default function Home() {
               <p className="lead">19 a 22/11 no Berecamp. Inscrições até 15/11.</p>
             </div>
             <div className="final-acoes">
-              <Cta local="final" />
+              <Cta local="final" aviso={false} />
               <p className="final-share est-aberto">Vai chamar alguém? <a href={"https://wa.me/?text=" + encodeURIComponent(CONVITE_MSG + " " + SITE_URL)} target="_blank" rel="noopener" data-track="compartilhar" data-local="final">Mandar o convite no WhatsApp</a></p>
             </div>
           </div>
