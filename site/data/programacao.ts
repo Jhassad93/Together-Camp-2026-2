@@ -12,7 +12,7 @@ export const PROGRAMACAO: Dia[] = [
       { hora: "19h", nome: "Saída do ônibus", detalhe: "Cerca de 1h30 até o Berecamp" },
       { hora: "21h", nome: "Chegada e acomodação nos quartos" },
       { hora: "22h15", nome: "Abertura e Culto da Fogueira", destaque: true },
-      { hora: "00h30", nome: "Ceia e confraternização" },
+      { hora: "00h", nome: "Ceia e confraternização" },
     ],
   },
   {
