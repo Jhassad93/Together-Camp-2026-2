@@ -81,7 +81,9 @@ p { margin: 0 0 1em; }
 .hero { position: relative; background: var(--amarelo); color: var(--cinza); padding: 8px 0 0; overflow: hidden; }
 .hero-meta { margin: 14px 0 0; font-weight: 700; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.4; max-width: 46ch; }
 .hero-word { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; color: var(--azul); font-size: min(calc((100vw - 2 * var(--gutter)) / 3.2), 362px); line-height: .8; letter-spacing: .005em; margin: 12px 0 0; white-space: nowrap; }
-.hero-greek { font-size: 15px; letter-spacing: .02em; margin-top: 18px; }
+.hero-sub { margin-top: 18px; font-size: clamp(26px, 4.2vw, 48px); line-height: .95; color: var(--cinza); max-width: 18ch; text-wrap: balance; }
+.tema-greek { margin: 18px 0 0; font-size: clamp(32px, 5vw, 56px); line-height: 1; font-weight: 600; color: var(--amarelo); }
+.tema-gloss { margin: 6px 0 0; font-size: 16px; color: var(--papel); }
 .hero-grid { display: flex; padding: 28px 0 44px; }
 .hero-cta { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 .price-note { font-size: 15px; }

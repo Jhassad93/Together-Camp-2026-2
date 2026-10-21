@@ -126,7 +126,7 @@ export default function Home() {
         <section className="hero" aria-labelledby="titulo">
           <div className="wrap">
             <h1 id="titulo" className="hero-word"><span className="sr-only">Together Camp 2026.2: </span>Ekballo</h1>
-            <p className="hero-greek">ἐκβάλλω · impelir, lançar para fora</p>
+            <h2 className="hero-sub">Quem vai construir a Igreja do amanhã?</h2>
             <p className="hero-meta">Acampamento de jovens · 19–22/11 · Berecamp, Arujá · R$ 500 ou 5x R$ 100</p>
             <div className="hero-grid">
               <div className="hero-cta">
@@ -146,10 +146,12 @@ export default function Home() {
           <div className="wrap tema-grid">
             <div>
               <h2 id="tema">O <em>tema</em></h2>
+              <p className="tema-greek" lang="grc">ἐκβάλλω</p>
+              <p className="tema-gloss">impelir, lançar para fora, enviar</p>
             </div>
             <div className="tema-def">
-              <p className="lead">Ekballo é uma palavra grega que significa impelir, lançar para fora, enviar.</p>
-              <p className="muted">É a palavra usada quando o Espírito impele Jesus para o deserto, e quando Jesus manda pedir ao Senhor da seara que envie trabalhadores. Os textos-base do acampamento:</p>
+              <p className="lead">É a palavra usada quando o Espírito impele Jesus para o deserto, e quando Jesus manda pedir ao Senhor da seara que envie trabalhadores.</p>
+              <p className="muted">Os textos-base do acampamento:</p>
               <div className="refs"><span className="ref">Marcos 1.12</span><span className="ref">Mateus 9.38</span></div>
             </div>
           </div>
