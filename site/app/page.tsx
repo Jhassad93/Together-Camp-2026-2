@@ -196,7 +196,7 @@ export default function Home() {
         <section className="sec sec-papel" aria-labelledby="quando">
           <div className="wrap">
             <div className="sec-head">
-              <h2 id="quando">Feriadão <em>no mato</em></h2>
+              <h2 id="quando">Feriadão <em>com&nbsp;a&nbsp;galera</em></h2>
               <p className="lead">De quinta a domingo. A sexta, 20/11, é feriado nacional.</p>
             </div>
             <div className="cards cards-3">
