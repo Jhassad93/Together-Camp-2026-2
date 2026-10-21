@@ -215,7 +215,7 @@ export default function Home() {
               <div className="card">
                 <h3>Volta</h3>
                 <p className="big"><span className="nw">Dom 22/11</span> · <span className="nw">17h</span></p>
-                <p>O ônibus sai do Berecamp às 14h e chega à AD Bereana por volta das 17h. Combine com quem vai te buscar.</p>
+                <p>O ônibus sai do Berecamp às 14h e chega à Bereana por volta das 17h. A gente participa do culto juntos às 18h. Combine com quem vai te buscar.</p>
               </div>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
             </div>
             <div className="cards cards-2">
               <div className="card"><h3>Quinta, 19/11</h3><p>19h · Check-in e saída da AD Bereana rumo ao Berecamp.</p></div>
-              <div className="card"><h3>Domingo, 22/11</h3><p>14h · Saída do Berecamp. 17h · Chegada prevista à AD Bereana.</p></div>
+              <div className="card"><h3>Domingo, 22/11</h3><p>14h · Saída do Berecamp. 17h · Chegada prevista à AD Bereana. 18h · Culto juntos na Bereana.</p></div>
             </div>
           </div>
         </section>
@@ -319,7 +319,7 @@ export default function Home() {
               <p className="lead">O que a família precisa saber antes de autorizar.</p>
             </div>
             <div className="imp-grid">
-              <div className="imp"><h3>Saída e volta</h3><p>Saída da AD Bereana (Rua Joaquim Távora, 1403, Vila Mariana) na quinta, 19/11, às 19h. Volta no domingo, 22/11, com chegada prevista às 17h no mesmo local. Ônibus de ida e volta incluso.</p></div>
+              <div className="imp"><h3>Saída e volta</h3><p>Saída da AD Bereana (Rua Joaquim Távora, 1403, Vila Mariana) na quinta, 19/11, às 19h. Volta no domingo, 22/11, com chegada prevista às 17h no mesmo local. Às 18h, a galera participa junta do culto na Bereana. Ônibus de ida e volta incluso.</p></div>
               <div className="imp"><h3>Autorização e documentos</h3><p>Para menores de 18 anos, quem faz a pré-inscrição é o responsável legal, que também entrega impressa e assinada a autorização de viagem e uso de imagem até 15/11. Todo acampante leva documento original com foto.</p></div>
               <div className="imp"><h3>Saúde</h3><p>Na inscrição, a família informa contato de emergência, restrições alimentares e condições de saúde. A organização não fornece nem aplica remédios: quem usa remédio controlado ou tem alergia grave deve avisar a liderança no check-in.</p></div>
               <div className="imp"><h3>Fale com a liderança</h3><p>Qualquer dúvida antes de autorizar, fale direto com a liderança pelo WhatsApp.</p><p><a className="btn btn-ghost" href={WHATSAPP_URL} target="_blank" rel="noopener" data-track="clique_whatsapp" data-local="pais">WhatsApp da liderança</a></p></div>
