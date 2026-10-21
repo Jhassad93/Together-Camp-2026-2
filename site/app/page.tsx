@@ -320,8 +320,8 @@ export default function Home() {
                 <li>Hospedagem</li>
                 <li>Alimentação</li>
               </ul>
-              <Cta local="inscricao" pulse />
-              <p className="prazo"><span className="est-aberto">Prazo final: 15/11 · <RestamTexto /></span><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Inscrições encerradas em 15/11</span><span className="est-realizado">Evento realizado</span></p>
+              <Cta local="inscricao" pulse aviso={false} />
+              <p className="prazo"><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Inscrições encerradas em 15/11</span><span className="est-realizado">Evento realizado</span></p>
             </section>
           </div>
         </section>

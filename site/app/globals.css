@@ -187,6 +187,7 @@ p { margin: 0 0 1em; }
 .preco .valor { font-family: var(--font-display); font-weight: 900; font-size: clamp(64px, 10vw, 112px); line-height: .85; color: var(--amarelo); margin: 0 0 14px; }
 .preco ul { padding-left: 20px; margin: 18px 0 26px; }
 .preco .prazo { margin: 16px 0 0; font-size: 15px; color: var(--papel); }
+html:not([data-estado="esgotado"]):not([data-estado="encerrado"]):not([data-estado="realizado"]) .preco .prazo { display: none; }
 @media (min-width: 900px) { .insc-grid { grid-template-columns: 1.3fr 1fr; align-items: start; } .preco { position: sticky; top: 24px; } }
 
 /* Checklist */
