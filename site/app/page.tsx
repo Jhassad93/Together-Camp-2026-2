@@ -46,6 +46,7 @@ const jsonLd = {
         name: "Igreja Evangélica Assembléia de Deus Bereana",
         url: INSTA_IGREJA,
         address: { "@type": "PostalAddress", streetAddress: "Rua Joaquim Távora, 1403", addressLocality: "São Paulo", addressRegion: "SP", addressCountry: "BR" },
+        telephone: "+55 11 5083-1830",
         sameAs: [INSTA_IGREJA, INSTA_JOVEM],
       },
     },
@@ -440,6 +441,7 @@ export default function Home() {
             <div>
               <h3>AD Bereana</h3>
               <p>Rua Joaquim Távora, 1403<br />Vila Mariana, São Paulo/SP</p>
+              <p><a href="tel:+551150831830" data-track="clique_telefone" data-local="rodape">(11) 5083-1830</a></p>
               <p><a className="caps" href="/privacidade">POLÍTICA DE PRIVACIDADE</a></p>
             </div>
           </div>
