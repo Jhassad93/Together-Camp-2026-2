@@ -3,6 +3,7 @@ import Vagas from "@/components/Vagas";
 import Stack from "@/components/Stack";
 import Invite from "@/components/Invite";
 import Silhouette from "@/components/Silhouette";
+import GraficoGeracoes from "@/components/GraficoGeracoes";
 import MarqueePause from "@/components/MarqueePause";
 import { RestamTexto } from "@/components/vagasStore";
 import { PREGADORES } from "@/data/pregadores";
@@ -155,6 +156,39 @@ export default function Home() {
               <p className="muted">Os textos-base do acampamento:</p>
               <div className="refs"><span className="ref">Marcos 1.12</span><span className="ref">Mateus 9.38</span></div>
             </div>
+          </div>
+
+          <div className="wrap tema-historia">
+            <h3 className="tema-h3">Três gerações, <em>uma pergunta</em></h3>
+            <div className="geracoes">
+              <div className="geracao">
+                <p className="geracao-titulo">Nossos avós desbravaram</p>
+                <p>Em 1980, só 6,6% dos brasileiros eram evangélicos. Foi a geração que abriu igreja onde não tinha nenhuma, pregou na praça e levantou templo tijolo por tijolo.</p>
+              </div>
+              <div className="geracao">
+                <p className="geracao-titulo">Nossos pais fizeram o Evangelho avançar</p>
+                <p>Entre 1991 e 2010, a Igreja saiu de 9% para mais de 21% da população. Célula, discipulado, louvor que lotou estádio: o Evangelho chegou em cada canto do país.</p>
+              </div>
+              <div className="geracao geracao-nossa">
+                <p className="geracao-titulo">E a nossa geração?</p>
+                <p>Hoje somos 26,9% dos brasileiros, cerca de 47 milhões de pessoas. Nunca fomos tantos. Mas o crescimento perdeu fôlego: de 2010 a 2022 foi o menor avanço desde 2000. E tem um dado que pesa pra gente: entre os 10 e 14 anos, quase 1 em cada 3 é evangélico. Na vida adulta, essa proporção cai.</p>
+              </div>
+            </div>
+
+            <GraficoGeracoes />
+
+            <div className="tema-texto">
+              <p>A gente vive o que nenhuma geração viveu: inteligência artificial mudando o trabalho, tecnologia que fica velha em meses, redes sociais redesenhando como a gente pensa, se relaciona e acredita. Vinte anos atrás, quem falava em &ldquo;evangélico não praticante&rdquo;?</p>
+              <p><strong>Ekballo é ser lançado pra fora.</strong> Do conforto, da bolha, do banco da igreja. Pro lugar onde as pessoas estão, falando a língua que elas entendem. A Igreja precisa sair da igreja pra trazer gente pra Cristo.</p>
+            </div>
+
+            <h3 className="tema-h3">E você <em>com isso?</em></h3>
+            <ul className="atitudes">
+              <li><strong>Viva o que você prega.</strong> No colégio, na faculdade, no trabalho e no feed. O testemunho fala antes da pregação.</li>
+              <li><strong>Chame alguém pra perto.</strong> Discipulado começa num convite, e este acampamento é um bom primeiro passo.</li>
+              <li><strong>Use o que você tem.</strong> Tecnologia, arte, esporte, negócio: tudo isso pode servir ao Reino.</li>
+            </ul>
+            <p className="tema-fecho">Os propósitos são gravados em pedra; os métodos, escritos a lápis. A mensagem não muda. O jeito de levar muda, e isso é com a nossa geração.</p>
           </div>
         </section>
 

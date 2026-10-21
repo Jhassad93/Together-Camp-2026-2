@@ -313,3 +313,51 @@ html:not([data-estado="realizado"]) .est-realizado { display: none !important; }
   .sticky-cta span { font-size: 11px; }
   .sticky-cta .btn { padding: 0 12px; font-size: 13px; }
 }
+
+/* Tema: três gerações, gráfico e chamada à responsabilidade */
+.tema-historia { margin-top: clamp(56px, 8vw, 96px); display: grid; gap: clamp(28px, 4vw, 44px); }
+.tema-historia > * { min-width: 0; }
+.tema-h3 { font-size: clamp(32px, 5vw, 56px); color: var(--papel); }
+.tema-h3 em { color: var(--amarelo); font-style: normal; }
+.geracoes { display: grid; gap: 14px; }
+.geracao { border: 2px solid rgba(244,241,234,.25); border-radius: var(--radius); padding: 22px; }
+.geracao p { margin: 0; }
+.geracao p + p { margin-top: 10px; }
+.geracao-titulo { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(22px, 2.6vw, 28px); line-height: 1; color: var(--amarelo); }
+.geracao-nossa { border-color: var(--amarelo); }
+@media (min-width: 900px) { .geracoes { grid-template-columns: repeat(3, 1fr); } }
+.tema-texto { max-width: 62ch; display: grid; gap: 14px; font-size: clamp(17px, 1.8vw, 19px); }
+.tema-texto p { margin: 0; }
+.tema-texto strong { color: var(--amarelo); }
+.atitudes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; max-width: 62ch; }
+.atitudes li { padding-left: 30px; position: relative; }
+.atitudes li::before { content: ""; position: absolute; left: 0; top: 7px; width: 14px; height: 14px; background: var(--amarelo); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
+.atitudes strong { color: var(--amarelo); }
+.tema-fecho { margin: 0; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(22px, 3vw, 32px); line-height: 1.05; max-width: 28ch; color: var(--papel); }
+
+/* Gráfico das gerações */
+.grafico { margin: 0; }
+.grafico-titulo { font-weight: 700; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--papel); margin-bottom: 12px; }
+.grafico-scroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.grafico-svg { display: block; width: 100%; min-width: 600px; height: auto; font-family: var(--font-body); }
+.grafico-nota { margin: 10px 0 0; font-size: 13px; color: var(--papel); opacity: .8; max-width: 70ch; }
+.g-faixa { fill: rgba(244,241,234,.03); }
+.g-faixa-b { fill: rgba(244,241,234,.07); }
+.g-faixa-titulo { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 20px; fill: var(--papel); }
+.g-nossa { fill: var(--amarelo); }
+.g-faixa-sub { font-size: 14px; fill: var(--papel); opacity: .8; }
+.g-grade { stroke: rgba(244,241,234,.12); stroke-width: 1; }
+.g-base { stroke: rgba(244,241,234,.4); stroke-width: 1; }
+.g-eixo { font-size: 14px; fill: rgba(244,241,234,.75); font-variant-numeric: tabular-nums; }
+.g-linha { fill: none; stroke: var(--amarelo); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.g-ponto { fill: var(--amarelo); stroke: var(--cinza); stroke-width: 2; }
+.g-valor { font-size: 15px; font-weight: 700; fill: var(--papel); font-variant-numeric: tabular-nums; }
+.g-valor-destaque { font-size: 17px; fill: var(--amarelo); }
+.g-proj { fill: none; stroke-width: 2.5; stroke-dasharray: 2 7; stroke-linecap: round; }
+.g-proj-lento { stroke: rgba(244,241,234,.55); }
+.g-proj-forte { stroke: var(--amarelo); }
+.g-proj-rot { font-size: 14px; fill: rgba(244,241,234,.8); }
+.g-proj-rot-forte { fill: var(--amarelo); font-weight: 700; }
+.grafico-scroll:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 4px; }
+.grafico-dica { display: none; margin: -4px 0 10px; font-size: 13px; color: var(--amarelo); }
+@media (max-width: 679px) { .grafico-dica { display: block; } }
