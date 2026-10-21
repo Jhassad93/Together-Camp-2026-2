@@ -66,7 +66,7 @@ function IconeFoto() {
 const AVISO_FORM = "Abre no Google Forms · precisa de conta Google · menor de 18? o responsável preenche";
 
 // Um bloco de botão por estado; <html data-estado> mostra só o certo (aberto é o padrão sem JS)
-function Cta({ local, pulse = false }: { local: string; pulse?: boolean }) {
+function Cta({ local, pulse = false, aviso = true }: { local: string; pulse?: boolean; aviso?: boolean }) {
   return (
     <div className="cta-block">
       <a className={pulse ? "btn btn-primary btn-pulse est-aberto" : "btn btn-primary est-aberto"} href={FORM_URL} target="_blank" rel="noopener" data-track="clique_inscricao" data-local={local}>
@@ -78,7 +78,7 @@ function Cta({ local, pulse = false }: { local: string; pulse?: boolean }) {
       <a className="btn btn-primary est-encerrado" href={WHATSAPP_URL} target="_blank" rel="noopener" data-track="clique_whatsapp" data-local={local}>
         Falar com a liderança <span className="arrow" aria-hidden="true">→</span>
       </a>
-      <p className="cta-note est-aberto">{AVISO_FORM}</p>
+      {aviso && <p className="cta-note est-aberto">{AVISO_FORM}</p>}
       <p className="cta-note est-esgotado">As {VAGAS} vagas foram preenchidas. Deixe seu nome com a liderança para o caso de desistência.</p>
       <a className="btn btn-primary est-realizado" href={INSTA_JOVEM} target="_blank" rel="noopener" data-local={local}>
         Ver fotos no @bereanajovem <span className="arrow" aria-hidden="true">→</span>
@@ -129,10 +129,9 @@ export default function Home() {
           <div className="wrap">
             <h1 id="titulo" className="hero-word"><span className="sr-only">Together Camp 2026.2: </span>Ekballo</h1>
             <h2 className="hero-sub">Quem vai construir a Igreja do amanhã?</h2>
-            <p className="hero-meta">19–22/11 · Berecamp, Arujá · R$ 500 ou 5x R$ 100</p>
             <div className="hero-grid">
               <div className="hero-cta">
-                <Cta local="hero" pulse />
+                <Cta local="hero" pulse aviso={false} />
               </div>
             </div>
           </div>
