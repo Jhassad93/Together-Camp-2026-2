@@ -58,7 +58,7 @@ Desvios do kit, aprovados: hospedagem na Vercel (não Cloudflare); CSS próprio 
 
 ## Etapa 9 — Operação até o evento
 - [ ] 22/10, 29/10, 05/11: receber foto (PNG sem fundo) e nome do pregador; preencher `site/data/pregadores.ts` e republicar
-- [ ] Publicar a programação quando fechar
+- [x] Publicar a programação quando fechar
 - [x] Comportamento ao chegar em 80 vagas: lista de espera pelo WhatsApp (automático)
 - [ ] 16/11: trocar o contador por "Inscrições encerradas" (automático pelo prazo) e revisar os textos
 - [ ] Depois do evento: tirar o site do ar ou transformar em página de memórias
@@ -71,6 +71,6 @@ Conteúdo para os pais e garantias de quem paga (P1 da crítica, rodada 2). Text
 - [ ] Supervisão e alojamento (quartos, proporção de líderes)
 - [ ] PDF da autorização (menor) e do termo de imagem (maior) para download
 - [ ] Fotos de edições anteriores com autorização de imagem
-- [ ] Programação completa (o responsável envia)
+- [x] Programação completa (o responsável envia)
 - [ ] ID do GA4 (`NEXT_PUBLIC_GA_ID` na Vercel) e encarregado de dados (LGPD) na política de privacidade
 - [ ] Publicação na Vercel e checagens pós-deploy (ver docs/AUDITORIA.md)
