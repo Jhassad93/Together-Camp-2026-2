@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://togethercamp.vercel.app/sitemap.xml
+Sitemap: https://together-camp-2026-2-mify.vercel.app/sitemap.xml

@@ -120,7 +120,7 @@ Privacidade: nenhum achado. Home: três achados, todos com decisão registrada.
 
 ## Pendências para o responsável
 Nada abaixo impede a publicação; os itens 1 e 2 são o próprio deploy e suas checagens.
-1. Publicar na Vercel (`npx vercel --prod` dentro de `site/`, ou importar o repositório no painel com "Root Directory" = `site`) e confirmar o endereço final. Se não for `togethercamp.vercel.app`, ajustar `NEXT_PUBLIC_SITE_URL`, `sitemap.xml`, `robots.txt` e `llms.txt`.
+1. Publicar na Vercel (`npx vercel --prod` dentro de `site/`, ou importar o repositório no painel com "Root Directory" = `site`) e confirmar o endereço final. Endereço confirmado em 21/10. Se mudar, ajustar `NEXT_PUBLIC_SITE_URL`, `sitemap.xml`, `robots.txt` e `llms.txt`.
 2. Após o deploy: PageSpeed Insights, securityheaders.com, Teste de pesquisa aprimorada, compartilhar o link no WhatsApp para ver a imagem, testar como estranho (item 19), conferir se o contador de vagas responde.
 3. Criar a conta GA4 e cadastrar `NEXT_PUBLIC_GA_ID` na Vercel.
 4. Informar o encarregado de dados (LGPD) e, se quiser, o CNPJ no rodapé.

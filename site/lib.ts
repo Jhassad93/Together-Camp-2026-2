@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://togethercamp.vercel.app";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://together-camp-2026-2-mify.vercel.app";
 export const FORM_URL = "https://forms.gle/MqZYxLnfGr9GPpP87";
 export const WHATSAPP_URL =
   "https://wa.me/5511984482098?text=" +
