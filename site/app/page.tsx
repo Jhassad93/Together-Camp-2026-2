@@ -8,6 +8,8 @@ import MarqueePause from "@/components/MarqueePause";
 import { RestamTexto } from "@/components/vagasStore";
 import { PREGADORES } from "@/data/pregadores";
 import { PROGRAMACAO } from "@/data/programacao";
+import { LIDERES } from "@/data/lideres";
+import Lideres from "@/components/Lideres";
 import { FORM_URL, WHATSAPP_URL, ESPERA_URL, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
 
 const faq: { q: string; a: string }[] = [
@@ -256,6 +258,17 @@ export default function Home() {
             </ul>
           </div>
           <p className="preg-tease"><a href={INSTA_JOVEM} target="_blank" rel="noopener">Já sabe quem é? Comenta no @bereanajovem</a></p>
+        </section>
+
+        {/* LIDERANÇA */}
+        <section className="sec sec-papel" aria-labelledby="lideranca">
+          <div className="wrap">
+            <div className="sec-head">
+              <h2 id="lideranca">Quem cuida <em>da galera</em></h2>
+              <p className="lead">A liderança de jovens da Bereana, que criou o Together junto com a liderança dos adolescentes, vai estar no acampamento do primeiro ao último dia.</p>
+            </div>
+            <Lideres casais={LIDERES} />
+          </div>
         </section>
 
         {/* CONVITE */}

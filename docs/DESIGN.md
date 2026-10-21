@@ -31,6 +31,7 @@ Pares de contraste medidos: cinza/amarelo 9,5:1 · cinza/papel 14,3:1 · azul/br
 ## Imagens
 - Origem: nenhuma fotografia. Silhuetas genéricas em SVG (não representam ninguém), ícone de câmera genérico, imagem Open Graph e ícones gerados no projeto.
 - Quando os pregadores forem revelados: fotos fornecidas pela liderança, com autorização de imagem, recortadas no mesmo enquadramento das silhuetas (busto, fundo removido ou escurecido).
+- Fotos da liderança: recorte quadrado (1:1, 900×900 px), contraste, grão leve e duotom azul (`#3D00FF`, sombras) → amarelo (`#FFCD12`, luzes), em WebP. Aprovado em 21/10; a mesma receita vale para toda foto de pessoas no site.
 - Nunca: foto de banco.
 
 ## Celular (decisões próprias)
