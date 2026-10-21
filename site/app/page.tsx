@@ -9,7 +9,7 @@ import { PREGADORES } from "@/data/pregadores";
 import { FORM_URL, WHATSAPP_URL, ESPERA_URL, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
 
 const faq: { q: string; a: string }[] = [
-  { q: "Preciso ser da Bereana para ir?", a: "Não. O Together Camp é aberto a qualquer adolescente ou jovem de 14 a 30 anos, frequente ou não a igreja. Chama quem você quiser." },
+  { q: "Preciso ser da Bereana para ir?", a: "Não. O Together Camp é aberto a qualquer adolescente ou jovem de 12 a 25 anos, frequente ou não a igreja. Chama quem você quiser." },
   { q: "E se eu não conhecer ninguém?", a: "Muita gente chega sem conhecer quase ninguém e volta com amigos novos. São quatro dias juntos, com quarto, refeições e programação em grupo, e a liderança fica de olho para ninguém ficar sozinho." },
   { q: "Quanto custa e o que está incluso?", a: "R$ 500,00, que pode ser à vista no Pix ou em até 5x de R$ 100 no cartão de crédito (não há desconto à vista). Estão inclusos o ônibus de ida e volta, a hospedagem e a alimentação." },
   { q: "A pré-inscrição já garante a vaga?", a: "Não. A vaga só é confirmada depois do pagamento e da entrega dos documentos na recepção da Bereana. São 80 vagas." },
@@ -25,7 +25,7 @@ const jsonLd = {
     {
       "@type": "Event",
       name: "Together Camp 2026.2 · Ekballo",
-      description: "Acampamento de adolescentes e jovens de 14 a 30 anos da Assembleia de Deus Bereana.",
+      description: "Acampamento de adolescentes e jovens de 12 a 25 anos da Assembleia de Deus Bereana.",
       startDate: "2026-11-19T19:00:00-03:00",
       endDate: "2026-11-22T17:00:00-03:00",
       eventStatus: "https://schema.org/EventScheduled",
@@ -104,7 +104,7 @@ export default function Home() {
                   <li>Acampamento de jovens e adolescentes</li>
                   <li>19 a 22 de novembro</li>
                   <li>Berecamp · Arujá/SP</li>
-                  <li>14 a 30 anos · <b>da igreja ou não</b></li>
+                  <li>12 a 25 anos</li>
                   <li><span className="est-aberto">Só <b>{VAGAS} vagas</b></span><span className="est-esgotado"><b>Vagas esgotadas</b></span><span className="est-encerrado"><b>Inscrições encerradas</b></span><span className="est-realizado"><b>Foi incrível. Até o próximo!</b></span></li>
                   <li>R$ 500 ou <b>5x de R$ 100</b></li>
                 </Fragment>

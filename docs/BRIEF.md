@@ -45,7 +45,7 @@ Objetivos declarados pelo responsável:
 
 ## Público
 - Visitantes:
-  1. Adolescentes e jovens de 14 a 30 anos da Bereana
+  1. Adolescentes e jovens de 12 a 25 anos da Bereana (faixa alterada de 14–30 para 12–25 em 21/10/2026)
   2. Amigos convidados por eles. O acampamento é aberto a quem não é da Bereana; esse público chega pelo link compartilhado.
   3. Pais e responsáveis, que autorizam os menores de 18 anos e, em geral, pagam
 - Peso de cada público e se haverá linguagem dirigida aos pais: [A CONFIRMAR]
@@ -67,7 +67,7 @@ Objetivos declarados pelo responsável:
   - Como faço a inscrição? A pré-inscrição garante a vaga? (do formulário: não; a vaga só é confirmada com pagamento e documentos)
   - Até quando entrego a autorização assinada? Até 15/11/2026, mesmo prazo da inscrição.
   - Preciso ser da igreja para participar? Não, é aberto a quem não é da Bereana.
-  - Qual a idade? De 14 a 30 anos.
+  - Qual a idade? De 12 a 25 anos.
 
 ## Mensagem
 - Tema da edição 2026.2: **Ekballo**

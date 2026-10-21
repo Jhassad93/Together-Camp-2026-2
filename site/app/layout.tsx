@@ -7,7 +7,7 @@ import CookieConsent from "@/components/CookieConsent";
 
 const title = "Together Camp 2026.2 · Ekballo · 19 a 22 de novembro";
 const description =
-  "Acampamento de adolescentes e jovens (14 a 30 anos) da AD Bereana, no feriadão de 19 a 22/11 no Berecamp, em Arujá/SP. 80 vagas, inscrições até 15/11.";
+  "Acampamento de adolescentes e jovens (12 a 25 anos) da AD Bereana, no feriadão de 19 a 22/11 no Berecamp, em Arujá/SP. 80 vagas, inscrições até 15/11.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
