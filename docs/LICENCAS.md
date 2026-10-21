@@ -3,8 +3,8 @@
 | Componente ou recurso | Origem | Licença | Observação |
 | --- | --- | --- | --- |
 | Next.js 15.5, React 19 | vercel/next.js, facebook/react (npm) | MIT | — |
-| Big Shoulders Display (900) | Google Fonts via `@fontsource/big-shoulders-display` 5.3.0 | SIL Open Font License 1.1 | hospedada no site; arquivo LICENSE no pacote |
-| Google Sans Flex (variável) | Google Fonts via `@fontsource-variable/google-sans-flex` 5.3.2 | SIL Open Font License 1.1 | hospedada no site |
+| Big Shoulders Display (900, subconjunto latino) | Google Fonts; arquivo woff2 copiado do pacote `@fontsource/big-shoulders-display` 5.3.0 para `site/public/fonts/` | SIL Open Font License 1.1 | hospedada no site, pré-carregada |
+| Google Sans Flex (variável, subconjunto latino) | Google Fonts; arquivo woff2 copiado do pacote `@fontsource-variable/google-sans-flex` 5.3.2 para `site/public/fonts/` | SIL Open Font License 1.1 | hospedada no site, pré-carregada |
 | Silhuetas dos pregadores | criadas no projeto (SVG) | do cliente | genéricas, não representam pessoas reais |
 | Ícone de câmera (rodapé) | criado no projeto (SVG) | do cliente | não é o logotipo do Instagram |
 | Imagem Open Graph, favicon, ícones 192/512 | criados no projeto | do cliente | gerados com a paleta e tipografia do site |

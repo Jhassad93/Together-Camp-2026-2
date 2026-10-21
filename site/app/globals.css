@@ -1,11 +1,17 @@
+/* Fontes hospedadas no próprio site (subconjunto latino; licença OFL, ver docs/LICENCAS.md) */
+@font-face { font-family: "Big Shoulders Display"; font-style: normal; font-weight: 900; font-display: swap; src: url(/fonts/big-shoulders-display-900.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+/* Reserva da fonte de títulos com métricas ajustadas: ocupa o mesmo espaço enquanto a Big Shoulders carrega (evita salto de layout) */
+@font-face { font-family: "Big Shoulders Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"), local("Roboto Bold"), local("Roboto-Bold"), local("Helvetica Neue Bold"), local("Arial"), local("Roboto"); font-weight: 900; size-adjust: 68.3%; ascent-override: 144.1%; descent-override: 31.2%; line-gap-override: 0%; }
+@font-face { font-family: "Google Sans Flex"; font-style: normal; font-weight: 1 1000; font-display: swap; src: url(/fonts/google-sans-flex.woff2) format("woff2-variations"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 :root {
   --cinza: #2c2a29;
   --amarelo: #ffcd12;
   --azul: #3d00ff;
   --papel: #f4f1ea;
   --cinza-2: #3a3736;
-  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
-  --font-body: "Google Sans Flex Variable", "Google Sans Flex", system-ui, sans-serif;
+  --font-display: "Big Shoulders Display", "Big Shoulders Fallback", "Arial Narrow", sans-serif;
+  --font-body: "Google Sans Flex", system-ui, sans-serif;
   --max: 1160px;
   --gutter: clamp(16px, 4vw, 40px);
   --sec: clamp(72px, 11vw, 140px);
@@ -28,7 +34,7 @@ a { color: inherit; }
 h1, h2, h3, .display { font-family: var(--font-display); font-weight: 900; line-height: .9; letter-spacing: .005em; text-transform: uppercase; margin: 0; }
 h2 { font-size: clamp(44px, 8vw, 96px); }
 h3 { font-size: clamp(24px, 3vw, 32px); line-height: 1; }
-p { margin: 0 0 1em; }
+p { margin: 0 0 1em; } p, li, dd, summary { text-wrap: pretty; }
 .lead { font-size: clamp(19px, 2.2vw, 23px); line-height: 1.45; max-width: 36ch; }
 .muted { opacity: .78; }
 
@@ -84,8 +90,8 @@ p { margin: 0 0 1em; }
 .hero { position: relative; background: var(--amarelo); color: var(--cinza); padding: 8px 0 0; overflow: hidden; }
 .hero-meta { margin: 14px 0 0; font-weight: 700; font-size: clamp(16px, 1.8vw, 19px); line-height: 1.4; max-width: 46ch; }
 .hero-word { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; color: var(--azul); font-size: min(calc((100vw - 2 * var(--gutter)) / 3.2), 362px); line-height: .8; letter-spacing: .005em; margin: 12px 0 0; white-space: nowrap; }
-.hero-sub { margin-top: 18px; font-size: clamp(26px, 4.2vw, 48px); line-height: .95; color: var(--cinza); max-width: 18ch; text-wrap: balance; }
-.tema-greek { margin: 18px 0 0; font-size: clamp(32px, 5vw, 56px); line-height: 1; font-weight: 600; color: var(--amarelo); }
+.hero-sub { margin-top: 18px; font-size: clamp(26px, 4.2vw, 48px); line-height: .95; color: var(--cinza); max-width: 9.1em; text-wrap: balance; }
+.tema-greek { margin: 18px 0 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: clamp(32px, 5vw, 56px); line-height: 1; font-weight: 600; color: var(--amarelo); }
 .tema-gloss { margin: 6px 0 0; font-size: 16px; color: var(--papel); }
 .hero-grid { display: flex; padding: 28px 0 44px; }
 .hero-cta { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
@@ -327,14 +333,14 @@ html:not([data-estado="realizado"]) .est-realizado { display: none !important; }
 .geracao-titulo { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(22px, 2.6vw, 28px); line-height: 1; color: var(--amarelo); }
 .geracao-nossa { border-color: var(--amarelo); }
 @media (min-width: 900px) { .geracoes { grid-template-columns: repeat(3, 1fr); } }
-.tema-texto { max-width: 62ch; display: grid; gap: 14px; font-size: clamp(17px, 1.8vw, 19px); }
+.tema-texto { max-width: 56ch; display: grid; gap: 14px; font-size: clamp(17px, 1.8vw, 19px); }
 .tema-texto p { margin: 0; }
 .tema-texto strong { color: var(--amarelo); }
-.atitudes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; max-width: 62ch; }
+.atitudes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; max-width: 56ch; }
 .atitudes li { padding-left: 30px; position: relative; }
 .atitudes li::before { content: ""; position: absolute; left: 0; top: 7px; width: 14px; height: 14px; background: var(--amarelo); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
 .atitudes strong { color: var(--amarelo); }
-.tema-fecho { margin: 0; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(22px, 3vw, 32px); line-height: 1.05; max-width: 28ch; color: var(--papel); }
+.tema-fecho { margin: 0; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(22px, 3vw, 32px); line-height: 1.05; max-width: 14.2em; color: var(--papel); }
 
 /* Gráfico das gerações */
 .grafico { margin: 0; }

@@ -73,4 +73,4 @@ Conteúdo para os pais e garantias de quem paga (P1 da crítica, rodada 2). Text
 - [ ] Fotos de edições anteriores com autorização de imagem
 - [x] Programação completa (o responsável envia)
 - [ ] ID do GA4 (`NEXT_PUBLIC_GA_ID` na Vercel) e encarregado de dados (LGPD) na política de privacidade
-- [ ] Publicação na Vercel e checagens pós-deploy (ver docs/AUDITORIA.md)
+- [ ] Publicação na Vercel e checagens pós-deploy (ver docs/AUDITORIA.md, auditoria 2 de 21/10 concluída: pronto para publicar)

@@ -1,6 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource/big-shoulders-display/900";
-import "@fontsource-variable/google-sans-flex";
 import "./globals.css";
 import { SITE_URL } from "@/lib";
 import CookieConsent from "@/components/CookieConsent";
@@ -33,6 +31,10 @@ export const viewport: Viewport = { themeColor: "#FFCD12", width: "device-width"
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="preload" href="/fonts/big-shoulders-display-900.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/google-sans-flex.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
       <body>
         {children}
         <CookieConsent />
