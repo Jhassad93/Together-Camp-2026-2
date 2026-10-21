@@ -265,7 +265,7 @@ export default function Home() {
           <div className="wrap">
             <div className="sec-head">
               <h2 id="lideranca">Quem cuida <em>da galera</em></h2>
-              <p className="lead">A liderança de jovens da Bereana, que criou o Together junto com a liderança dos adolescentes, vai estar no acampamento do primeiro ao último dia.</p>
+              <p className="lead">Dois casais da Bereana lideram jovens e adolescentes. Eles criaram o Together e vão estar no acampamento do primeiro ao último dia.</p>
             </div>
             <Lideres casais={LIDERES} />
           </div>

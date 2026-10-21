@@ -67,7 +67,7 @@ Desvios do kit, aprovados: hospedagem na Vercel (não Cloudflare); CSS próprio 
 Conteúdo para os pais e garantias de quem paga (P1 da crítica, rodada 2). Textos sugeridos em `docs/CRITIQUE.md`; nada disso está publicado até a liderança confirmar.
 - [ ] Reembolso e desistência
 - [x] Nome e telefone do responsável pelo acampamento (seção "Quem cuida da galera": Fred e Gabi; telefone da igreja no rodapé)
-- [ ] Paulo e Tânia (liderança de adolescentes): biografia e foto para a segunda aba da seção
+- [x] Paulo e Tânia (liderança de adolescentes): biografia e foto na segunda aba da seção
 - [ ] Protocolo de emergência
 - [ ] Supervisão e alojamento (quartos, proporção de líderes)
 - [ ] PDF da autorização (menor) e do termo de imagem (maior) para download

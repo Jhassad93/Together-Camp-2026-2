@@ -15,6 +15,15 @@ export const LIDERES: Casal[] = [
       "Com a liderança dos adolescentes, criaram o Together: cultos, acampamentos e conferência.",
     ],
   },
-  // Paulo e Tânia (liderança de adolescentes): entram aqui quando chegarem a biografia e a foto.
-  // { id: "adolescentes", grupo: "Adolescentes", nomes: "Paulo e Tânia", papel: "Liderança de adolescentes", foto: "/lideres/paulo-tania.webp", bio: ["..."] },
+  {
+    id: "adolescentes",
+    grupo: "Adolescentes",
+    nomes: "Paulo e Tânia",
+    papel: "Liderança de adolescentes",
+    foto: "/lideres/paulo-tania.webp",
+    bio: [
+      "Paulo e Tânia são casados há 28 anos e pais do Heitor, de 18. Ele é presbítero, 56 anos; ela é diaconisa, 52.",
+      "Membros da Bereana Sede desde 1992, cooperam com o ministério de adolescentes desde 2018 e lideram o grupo desde 2020. Paulo também é professor no Berekids há mais de 20 anos: boa parte da galera cresceu ouvindo as aulas dele.",
+    ],
+  },
 ];

@@ -12,5 +12,6 @@
 | Textos do checklist, avisos e regras | Manual do Acampante 2026.1 (AD Bereana) | do cliente | adaptados e confirmados em 20/10 |
 | Fotos dos pregadores (futuras) | liderança | autorização de imagem a confirmar | uma linha por foto quando entrarem |
 | `site/public/lideres/fred-gabi.webp` (foto de Fred e Gabriela) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
+| `site/public/lideres/paulo-tania.webp` (foto de Paulo e Tânia) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
 
 Sem componentes de Spell UI, Cult UI, React Bits, Componentry, 21st.dev, Uiverse ou GSAP. Nenhuma foto de banco.
