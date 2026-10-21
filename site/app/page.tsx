@@ -101,7 +101,7 @@ export default function Home() {
             <ul key={n} aria-hidden={n === 1 ? true : undefined}>
               {[0, 1].map((r) => (
                 <Fragment key={r}>
-                  <li>Acampamento de jovens</li>
+                  <li>Acampamento de jovens e adolescentes</li>
                   <li>19 a 22 de novembro</li>
                   <li>Berecamp · Arujá/SP</li>
                   <li>14 a 30 anos · <b>da igreja ou não</b></li>
@@ -117,7 +117,9 @@ export default function Home() {
 
       <header className="header">
         <div className="wrap">
-          <a className="brand" href="/">Together<br />Camp <span>2026.2</span></a>
+          <a className="brand" href="/">Together Camp <span>2026.2</span></a>
+          <span className="header-sep" aria-hidden="true" />
+          <p className="header-tag">Acampamento de jovens e adolescentes</p>
         </div>
       </header>
 
@@ -127,7 +129,7 @@ export default function Home() {
           <div className="wrap">
             <h1 id="titulo" className="hero-word"><span className="sr-only">Together Camp 2026.2: </span>Ekballo</h1>
             <h2 className="hero-sub">Quem vai construir a Igreja do amanhã?</h2>
-            <p className="hero-meta">Acampamento de jovens · 19–22/11 · Berecamp, Arujá · R$ 500 ou 5x R$ 100</p>
+            <p className="hero-meta">19–22/11 · Berecamp, Arujá · R$ 500 ou 5x R$ 100</p>
             <div className="hero-grid">
               <div className="hero-cta">
                 <Cta local="hero" pulse />

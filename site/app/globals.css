@@ -72,7 +72,10 @@ p { margin: 0 0 1em; }
   .marquee li::after { margin-inline: 10px; width: 10px; height: 10px; }
   .marquee-pause { display: none; }
 }
-.header .wrap { display: flex; align-items: center; padding-block: 16px 0; }
+.header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding-block: 16px 0; }
+.header-sep { width: 14px; height: 14px; flex: none; background: var(--azul); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
+.header-tag { margin: 0; font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; line-height: 1.2; }
+@media (max-width: 559px) { .header-sep { display: none; } .header-tag { flex-basis: 100%; font-size: 12px; } }
 .brand { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 20px; line-height: .9; text-decoration: none; }
 .brand span { color: var(--azul); }
 .header .btn { min-height: 44px; padding: 0 20px; font-size: 15px; }
@@ -272,7 +275,7 @@ html:not([data-estado="realizado"]) .est-realizado { display: none !important; }
 .preco-title { font-family: var(--font-body); font-size: 15px; font-weight: 700; text-transform: none; letter-spacing: .02em; color: var(--papel); margin-bottom: 8px; }
 
 /* Áreas de toque de pelo menos 44 px */
-.brand { display: inline-block; padding-block: 4px; min-height: 44px; }
+.brand { display: inline-block; white-space: nowrap; padding-block: 11px; font-size: 22px; line-height: 1; }
 .card a, .footer a, .preg-when a, .faq-more a, .final-share a, .page .prose a, .page p > a:first-child { display: inline-flex; align-items: center; min-height: 48px; }
 .footer ul { gap: 0; }
 .faq-more { margin-top: 32px; }
