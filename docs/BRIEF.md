@@ -75,7 +75,7 @@ Objetivos declarados pelo responsável:
 - Significado do tema e frase-síntese aprovada pela liderança: [A CONFIRMAR]
 - Pregadores: três homens, que serão revelados depois. Até a revelação, o site mostra três silhuetas escuras (sombra ou preto), sem identificar ninguém.
   - Silhuetas genéricas (não feitas a partir de fotos dos pregadores), lado a lado e levemente desalinhadas.
-  - Revelação de um pregador por semana: 23/10, 30/10 e 06/11/2026. A troca de cada silhueta pela foto e nome deve ser independente das outras. No site, as datas aparecem em placas vermelhas (cor em teste, fora da paleta principal).
+  - Revelação de um pregador por semana: 24/10 (adiada de 23/10), 30/10 e 06/11/2026. A troca de cada silhueta pela foto e nome deve ser independente das outras. No site, as datas aparecem em placas vermelhas (cor em teste, fora da paleta principal).
 - Proposta de valor em uma frase: [A CONFIRMAR]
 - Provas: fotos e números de edições anteriores (participantes, edições já realizadas) [A CONFIRMAR]
 - Tom de voz (proposta a partir do manual anterior; [A CONFIRMAR]): jovem, acolhedor e reverente. Usa gíria leve ("se liga", "zero climão", "bora fazer história") sem perder o centro bíblico.
