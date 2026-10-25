@@ -7,6 +7,8 @@ import GraficoGeracoes from "@/components/GraficoGeracoes";
 import MarqueePause from "@/components/MarqueePause";
 import { RestamTexto } from "@/components/vagasStore";
 import { PREGADORES } from "@/data/pregadores";
+import { FOTOS } from "@/data/fotos";
+import Esteira from "@/components/Esteira";
 import { PROGRAMACAO } from "@/data/programacao";
 import { LIDERES } from "@/data/lideres";
 import Lideres from "@/components/Lideres";
@@ -270,6 +272,19 @@ export default function Home() {
             <Lideres casais={LIDERES} />
           </div>
         </section>
+
+        {/* FOTOS DO ÚLTIMO ACAMPAMENTO (só aparece com fotos em data/fotos.ts) */}
+        {FOTOS.length > 0 && (
+          <section className="sec sec-azul esteira-sec" aria-labelledby="fotos">
+            <div className="wrap">
+              <div className="sec-head">
+                <h2 id="fotos">Foi assim <em>no último</em></h2>
+                <p className="lead">Imagens do Together Camp de maio. Em novembro tem mais.</p>
+              </div>
+            </div>
+            <Esteira fotos={FOTOS} />
+          </section>
+        )}
 
         {/* CONVITE */}
         <section className="sec sec-cinza convite" aria-labelledby="convite">
