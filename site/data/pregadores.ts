@@ -4,7 +4,7 @@
 export type Pregador = { data: string; dataISO: string; nome?: string; igreja?: string; foto?: string };
 
 export const PREGADORES: Pregador[] = [
-  { data: "24/out", dataISO: "2026-10-24", nome: "Pr. André Rodrigues", igreja: "Assembleia de Deus Bereana de Belmonte", foto: "/pregadores/andre-rodrigues.webp" },
+  { data: "24/out", dataISO: "2026-10-24", nome: "Pr. André Nascimento", igreja: "Assembleia de Deus Bereana de Belmonte", foto: "/pregadores/andre-nascimento.webp" },
   { data: "30/out", dataISO: "2026-10-30" },
   { data: "06/nov", dataISO: "2026-11-06" },
 ];

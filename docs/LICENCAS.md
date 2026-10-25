@@ -10,7 +10,7 @@
 | Imagem Open Graph, favicon, ícones 192/512 | criados no projeto | do cliente | gerados com a paleta e tipografia do site |
 | Efeito de seções empilhadas | mecânica inspirada em alovehatestory.com | implementação própria | nenhum código ou identidade copiado |
 | Textos do checklist, avisos e regras | Manual do Acampante 2026.1 (AD Bereana) | do cliente | adaptados e confirmados em 20/10 |
-| `site/public/pregadores/andre-rodrigues.webp` (foto do Pr. André Rodrigues) | enviada pelo responsável em 24/10/2026 (já com fundo removido) | autorização de imagem a confirmar com a liderança | bordas refinadas, halo removido e degradê inferior aplicados no projeto |
+| `site/public/pregadores/andre-nascimento.webp` (foto do Pr. André Nascimento) | enviada pelo responsável em 24/10/2026 (já com fundo removido) | autorização de imagem a confirmar com a liderança | bordas refinadas, halo removido e degradê inferior aplicados no projeto |
 | Fotos dos demais pregadores (futuras) | liderança | autorização de imagem a confirmar | uma linha por foto quando entrarem |
 | `site/public/lideres/fred-gabi.webp` (foto de Fred e Gabriela) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
 | `site/public/lideres/paulo-tania.webp` (foto de Paulo e Tânia) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
