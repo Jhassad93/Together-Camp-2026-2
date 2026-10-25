@@ -275,13 +275,7 @@ export default function Home() {
 
         {/* FOTOS DO ÚLTIMO ACAMPAMENTO (só aparece com fotos em data/fotos.ts) */}
         {FOTOS.length > 0 && (
-          <section className="sec sec-azul esteira-sec" aria-labelledby="fotos">
-            <div className="wrap">
-              <div className="sec-head">
-                <h2 id="fotos">Foi assim <em>no último</em></h2>
-                <p className="lead">Imagens do Together Camp de maio. Em novembro tem mais.</p>
-              </div>
-            </div>
+          <section className="sec sec-azul esteira-sec" aria-label="Fotos do último Together Camp">
             <Esteira fotos={FOTOS} />
           </section>
         )}
