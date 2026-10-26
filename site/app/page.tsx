@@ -111,7 +111,6 @@ export default function Home() {
                   <li>Acampamento de jovens e adolescentes</li>
                   <li>19 a 22 de novembro</li>
                   <li>Berecamp · Arujá/SP</li>
-                  <li>12 a 25 anos</li>
                   <li><span className="est-aberto">Só <b>{VAGAS} vagas</b></span><span className="est-esgotado"><b>Vagas esgotadas</b></span><span className="est-encerrado"><b>Inscrições encerradas</b></span><span className="est-realizado"><b>Foi incrível. Até o próximo!</b></span></li>
                   <li>R$ 500 ou <b>5x de R$ 100</b></li>
                 </Fragment>
