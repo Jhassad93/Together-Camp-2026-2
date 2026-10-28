@@ -3,6 +3,7 @@ export const FORM_URL = "https://forms.gle/MqZYxLnfGr9GPpP87";
 export const WHATSAPP_URL =
   "https://wa.me/5511984482098?text=" +
   encodeURIComponent("Oi! Tenho uma dúvida sobre o Together Camp 2026.2");
+export const SPOTIFY_PLAYLIST = "https://open.spotify.com/playlist/5VmBlOPiKCwkfuWbW31j0b";
 export const INSTA_JOVEM = "https://www.instagram.com/bereanajovem/";
 export const INSTA_IGREJA = "https://www.instagram.com/bereana/";
 export const MAPS_BERECAMP =

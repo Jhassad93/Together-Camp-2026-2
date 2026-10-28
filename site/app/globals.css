@@ -427,3 +427,21 @@ html:not([data-estado="realizado"]) .est-realizado { display: none !important; }
   .esteira li { scroll-snap-align: start; }
   .esteira-pause { display: none; }
 }
+
+/* Playlist oficial (QR Code no computador, botão no celular) */
+.playlist { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: clamp(20px, 4vw, 40px); margin-top: clamp(24px, 4vw, 40px); padding: clamp(20px, 3.5vw, 32px); background: var(--amarelo); color: var(--cinza); border-radius: 6px; }
+.playlist-qr { display: block; background: var(--papel); padding: 14px; border-radius: 4px; line-height: 0; }
+.playlist-qr img { width: clamp(132px, 16vw, 168px); height: auto; display: block; }
+.playlist-kicker { margin: 0 0 6px; font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
+.playlist h3 { margin: 0 0 10px; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; line-height: .95; font-size: clamp(30px, 4.4vw, 48px); }
+.playlist-leg { margin: 0 0 18px; max-width: 44ch; }
+.playlist .btn-primary { background: var(--cinza); color: #fff; }
+.playlist .btn-primary:hover { background: #000; }
+.playlist :focus-visible { outline-color: var(--azul); }
+.playlist .so-pequena { display: none; }
+@media (max-width: 640px) {
+  .playlist { grid-template-columns: 1fr; }
+  .playlist-qr { display: none; }
+  .playlist .so-grande { display: none; }
+  .playlist .so-pequena { display: inline; }
+}

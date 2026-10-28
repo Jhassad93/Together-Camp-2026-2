@@ -12,7 +12,7 @@ import Esteira from "@/components/Esteira";
 import { PROGRAMACAO } from "@/data/programacao";
 import { LIDERES } from "@/data/lideres";
 import Lideres from "@/components/Lideres";
-import { FORM_URL, WHATSAPP_URL, ESPERA_URL, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
+import { SPOTIFY_PLAYLIST, FORM_URL, WHATSAPP_URL, ESPERA_URL, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
 
 const faq: { q: string; a: string }[] = [
   { q: "Preciso ser da Bereana para ir?", a: "Não. O Together Camp é aberto a qualquer adolescente ou jovem de 12 a 25 anos, frequente ou não a igreja. Chama quem você quiser." },
@@ -426,6 +426,17 @@ export default function Home() {
                 <div className="imp"><h3>Proibido</h3><p>Cigarro, bebida alcoólica, armas, fogos de artifício e bombas, ovos, farinha ou qualquer coisa que danifique o local. E desânimo também.</p></div>
               </div>
             </details>
+            <aside className="playlist" aria-labelledby="playlist-t">
+              <a className="playlist-qr" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener" aria-hidden="true" tabIndex={-1}>
+                <img src="/playlist-qr.svg" alt="" width={148} height={148} loading="lazy" decoding="async" />
+              </a>
+              <div className="playlist-txt">
+                <p className="playlist-kicker">Playlist oficial</p>
+                <h3 id="playlist-t">Entre no clima antes de chegar</h3>
+                <p className="playlist-leg"><span className="so-grande">Aponte a câmera do celular para o QR Code e ouça as músicas do Together Camp.</span><span className="so-pequena">As músicas do Together Camp, para ouvir a caminho e até a hora de embarcar.</span></p>
+                <a className="btn btn-primary" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener">Abrir no Spotify <span className="arrow" aria-hidden="true">→</span></a>
+              </div>
+            </aside>
           </div>
         </section>
 
