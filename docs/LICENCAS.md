@@ -14,6 +14,6 @@
 | Fotos dos demais pregadores (futuras) | liderança | autorização de imagem a confirmar | uma linha por foto quando entrarem |
 | `site/public/lideres/fred-gabi.webp` (foto de Fred e Gabriela) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
 | `site/public/lideres/paulo-tania.webp` (foto de Paulo e Tânia) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
-| `site/public/esteira/f1.webp` a `f6.webp` (6 fotos do último acampamento, maio/2026) | enviadas pelo responsável em 25/10/2026 | uso de imagem aprovado pelo responsável; autorização dos responsáveis pelos menores a confirmar | recorte quadrado, duotom azul→amarelo e grão aplicados no projeto |
+| `site/public/esteira/f1.webp` a `f15.webp` (15 fotos do último acampamento, maio/2026) | enviadas pelo responsável em 25/10 e 28/10/2026 | uso de imagem aprovado pelo responsável; autorização dos responsáveis pelos menores a confirmar | recorte quadrado, duotom azul→amarelo e grão aplicados no projeto |
 
 Sem componentes de Spell UI, Cult UI, React Bits, Componentry, 21st.dev, Uiverse ou GSAP. Nenhuma foto de banco.
