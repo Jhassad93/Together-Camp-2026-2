@@ -18,5 +18,4 @@ export const FOTOS: Foto[] = [
   { src: "/esteira/f6.webp", alt: "Jovem de boné com os braços para o alto, cantando" },
   { src: "/esteira/f15.webp", alt: "Jovens abraçados em oração ao redor da fogueira" },
   { src: "/esteira/f11.webp", alt: "Jovem ajoelhado, de cabeça baixa, em oração" },
-  { src: "/esteira/f9.webp", alt: "Jovens dançando e se divertindo na noite de fantasias" },
 ];
