@@ -223,6 +223,17 @@ export default function Home() {
                 <p>O ônibus sai do Berecamp às 15h e chega à Bereana por volta das 17h. A gente participa do culto juntos às 18h. Combine com quem vai te buscar.</p>
               </div>
             </div>
+            <aside className="playlist" aria-labelledby="playlist-t">
+              <a className="playlist-qr" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener" aria-hidden="true" tabIndex={-1}>
+                <img src="/playlist-qr.svg" alt="" width={148} height={148} loading="lazy" decoding="async" />
+              </a>
+              <div className="playlist-txt">
+                <p className="playlist-kicker">Playlist oficial</p>
+                <h3 id="playlist-t">Entre no clima antes de chegar</h3>
+                <p className="playlist-leg"><span className="so-grande">Aponte a câmera do celular para o QR Code e ouça as músicas do Together Camp.</span><span className="so-pequena">As músicas do Together Camp, para ouvir a caminho e até a hora de embarcar.</span></p>
+                <a className="btn btn-primary" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener">Abrir no Spotify <span className="arrow" aria-hidden="true">→</span></a>
+              </div>
+            </aside>
           </div>
         </section>
 
@@ -426,17 +437,6 @@ export default function Home() {
                 <div className="imp"><h3>Proibido</h3><p>Cigarro, bebida alcoólica, armas, fogos de artifício e bombas, ovos, farinha ou qualquer coisa que danifique o local. E desânimo também.</p></div>
               </div>
             </details>
-            <aside className="playlist" aria-labelledby="playlist-t">
-              <a className="playlist-qr" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener" aria-hidden="true" tabIndex={-1}>
-                <img src="/playlist-qr.svg" alt="" width={148} height={148} loading="lazy" decoding="async" />
-              </a>
-              <div className="playlist-txt">
-                <p className="playlist-kicker">Playlist oficial</p>
-                <h3 id="playlist-t">Entre no clima antes de chegar</h3>
-                <p className="playlist-leg"><span className="so-grande">Aponte a câmera do celular para o QR Code e ouça as músicas do Together Camp.</span><span className="so-pequena">As músicas do Together Camp, para ouvir a caminho e até a hora de embarcar.</span></p>
-                <a className="btn btn-primary" href={SPOTIFY_PLAYLIST} target="_blank" rel="noopener">Abrir no Spotify <span className="arrow" aria-hidden="true">→</span></a>
-              </div>
-            </aside>
           </div>
         </section>
 
