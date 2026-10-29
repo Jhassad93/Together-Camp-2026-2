@@ -9,6 +9,7 @@ import { RestamTexto } from "@/components/vagasStore";
 import { PREGADORES } from "@/data/pregadores";
 import { FOTOS } from "@/data/fotos";
 import Esteira from "@/components/Esteira";
+import NeonWord from "@/components/NeonWord";
 import { PROGRAMACAO } from "@/data/programacao";
 import { LIDERES } from "@/data/lideres";
 import Lideres from "@/components/Lideres";
@@ -318,9 +319,9 @@ export default function Home() {
                   </h3>
                   <ol className="dia-lista">
                     {d.atividades.map((a) => (
-                      <li key={a.hora + a.nome} className={a.destaque ? "ativ ativ-destaque" : "ativ"}>
+                      <li key={a.hora + a.nome} className={a.neon ? "ativ ativ-neon" : a.destaque ? "ativ ativ-destaque" : "ativ"}>
                         <span className="ativ-hora">{a.hora}</span>
-                        <span className="ativ-nome">{a.nome}{a.detalhe && <span className="ativ-detalhe">{a.detalhe}</span>}</span>
+                        <span className="ativ-nome">{a.neon ? <>{a.nome.replace(/ Neon$/, "")} <NeonWord /></> : a.nome}{a.detalhe && <span className="ativ-detalhe">{a.detalhe}</span>}</span>
                       </li>
                     ))}
                   </ol>

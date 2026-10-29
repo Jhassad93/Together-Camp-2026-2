@@ -1,7 +1,7 @@
 // Programação do Together Camp 2026.2 (enviada pela liderança em 21/10).
 // Os nomes dos pregadores ficam fora daqui de propósito: eles são revelados aos poucos na seção Pregadores.
-// "destaque" marca os cultos e momentos principais.
-export type Atividade = { hora: string; nome: string; detalhe?: string; destaque?: boolean };
+// "destaque" marca os cultos e momentos principais; "neon" faz a palavra final do nome (Neon) piscar como letreiro.
+export type Atividade = { hora: string; nome: string; detalhe?: string; destaque?: boolean; neon?: boolean };
 export type Dia = { dia: string; data: string; nota?: string; atividades: Atividade[] };
 
 export const PROGRAMACAO: Dia[] = [
@@ -33,7 +33,7 @@ export const PROGRAMACAO: Dia[] = [
       { hora: "9h–12h", nome: "Culto da Manhã", destaque: true },
       { hora: "12h–13h30", nome: "Almoço" },
       { hora: "13h30–19h", nome: "Tarde livre" },
-      { hora: "19h–20h30", nome: "Jantar e festa temática" },
+      { hora: "19h–20h30", nome: "Jantar e Festa Neon", detalhe: "Traga doces e bebidas sem álcool para dividir com a galera. Indique uma música para tocar na festa.", neon: true },
       { hora: "20h30–23h30", nome: "Culto da Noite", detalhe: "Com uma atividade especial", destaque: true },
     ],
   },

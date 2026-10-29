@@ -446,3 +446,10 @@ html:not([data-estado="realizado"]) .est-realizado { display: none !important; }
   .playlist .so-grande { display: none; }
   .playlist .so-pequena { display: inline; }
 }
+
+/* Festa Neon: palavra acesa e piscando 3 vezes ao entrar na tela */
+.ativ-neon .ativ-nome { color: var(--papel); font-weight: 700; }
+.ativ-neon .ativ-hora { color: var(--amarelo); }
+.neon { color: #ffe45c; text-shadow: 0 0 4px rgba(255,228,92,.9), 0 0 12px rgba(255,205,18,.85), 0 0 26px rgba(255,205,18,.55); text-transform: uppercase; letter-spacing: .04em; }
+.neon-pisca { animation: neon-pisca 1.5s steps(1, end) 3; }
+@keyframes neon-pisca { 0%, 58% { opacity: 1; } 60%, 74% { opacity: .22; } 76%, 100% { opacity: 1; } }
