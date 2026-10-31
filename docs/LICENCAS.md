@@ -11,7 +11,8 @@
 | Efeito de seções empilhadas | mecânica inspirada em alovehatestory.com | implementação própria | nenhum código ou identidade copiado |
 | Textos do checklist, avisos e regras | Manual do Acampante 2026.1 (AD Bereana) | do cliente | adaptados e confirmados em 20/10 |
 | `site/public/pregadores/andre-nascimento.webp` (foto do Pr. André Nascimento) | enviada pelo responsável em 24/10/2026 (já com fundo removido) | autorização de imagem a confirmar com a liderança | bordas refinadas, halo removido e degradê inferior aplicados no projeto |
-| Fotos dos demais pregadores (futuras) | liderança | autorização de imagem a confirmar | uma linha por foto quando entrarem |
+| `site/public/pregadores/fred-nunes.webp` (foto de Fred Nunes) | enviada pelo responsável em 31/10/2026 (fundo removido no projeto) | autorização de imagem a confirmar com a liderança | recorte do fundo, bordas refinadas e degradê inferior aplicados no projeto |
+| Foto do 3º pregador (futura) | liderança | autorização de imagem a confirmar | uma linha por foto quando entrarem |
 | `site/public/lideres/fred-gabi.webp` (foto de Fred e Gabriela) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
 | `site/public/lideres/paulo-tania.webp` (foto de Paulo e Tânia) | enviada pelo responsável em 21/10/2026 | uso de imagem autorizado pelos retratados (são a própria liderança) | recorte quadrado e duotom azul→amarelo aplicados no projeto |
 | `site/public/esteira/f1.webp` a `f15.webp` (15 fotos do último acampamento, maio/2026) | enviadas pelo responsável em 25/10 e 28/10/2026 | uso de imagem aprovado pelo responsável; autorização dos responsáveis pelos menores a confirmar | recorte quadrado, duotom azul→amarelo e grão aplicados no projeto |

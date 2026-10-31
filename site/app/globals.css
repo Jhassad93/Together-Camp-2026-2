@@ -170,6 +170,7 @@ p { margin: 0 0 1em; } p, li, dd, summary { text-wrap: pretty; }
 .placa-nome { font-size: clamp(16px, 2.4vw, 28px); line-height: 1; overflow-wrap: anywhere; }
 .placa-igreja { font-family: var(--font-body); font-weight: 700; font-size: clamp(11px, 1.2vw, 13px); letter-spacing: .04em; text-transform: none; }
 .fig-foto { width: 100%; height: auto; display: block; filter: drop-shadow(0 10px 24px rgba(0,0,0,.4)); }
+.fig-2 .fig-foto { transform: translateY(-22%); } /* foto com braço erguido: sobe para o rosto ficar acima do título e a mão sair pela borda do palco */
 .placa:nth-child(1) { transform: rotate(-2deg); }
 .placa:nth-child(3) { transform: rotate(2deg); }
 .preg-tease { margin: 0; background: #0d0c0c; color: #fff; text-align: center; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: 13px; padding: 0 16px 20px; }
