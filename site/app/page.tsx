@@ -336,13 +336,18 @@ export default function Home() {
           <div className="wrap insc-grid">
             <div>
               <div className="sec-head">
-                <h2 id="inscricao">Como garantir <em>sua vaga</em></h2>
+                <h2 id="inscricao"><span className="est-aberto">Como garantir <em>sua vaga</em></span><span className="est-encerrado">Inscrições <em>encerradas</em></span></h2>
               </div>
-              <ol className="steps">
+              <ol className="steps est-aberto">
                 <li><div><strong>Faça a pré-inscrição</strong><p>Preencha o formulário. Se você tem menos de 18 anos, quem preenche é o seu responsável legal.</p></div></li>
                 <li><div><strong>Pague e envie o comprovante</strong><p>R$ 500 no Pix ou em até 5x de R$ 100 no cartão, pelo link do próprio formulário, para a Igreja Evangélica Assembléia de Deus Bereana. O comprovante vai junto.</p></div></li>
                 <li><div><strong>Entregue os documentos</strong><p>Impressos e assinados, na recepção da Bereana: autorização de viagem e uso de imagem (menores) ou termo de imagem e voz (maiores).</p></div></li>
                 <li><div><strong>Vaga confirmada</strong><p>Com pagamento e documentos entregues, a vaga é sua. Tudo até 15/11.</p></div></li>
+              </ol>
+              <ol className="steps est-encerrado">
+                <li><div><strong>Chame a liderança no WhatsApp</strong><p>Mande uma mensagem para (11) 9-8448-2098 pedindo para entrar na lista de espera. Se for menor de 18 anos, o responsável legal faz o contato.</p></div></li>
+                <li><div><strong>Aguarde o retorno</strong><p>Se alguma vaga for liberada, a liderança chama quem está na lista.</p></div></li>
+                <li><div><strong>Confirme a vaga</strong><p>Quem for chamado recebe da liderança as instruções de pagamento e de entrega dos documentos assinados.</p></div></li>
               </ol>
             </div>
             <section className="preco" aria-label="Valor e o que está incluso">
