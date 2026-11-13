@@ -1,6 +1,6 @@
 "use client";
 import { useSyncExternalStore } from "react";
-import { DEADLINE_ISO, EVENTO_FIM_ISO, VAGAS, VAGAS_API } from "@/lib";
+import { DEADLINE_ISO, EVENTO_FIM_ISO, INSCRICOES_ENCERRADAS, VAGAS, VAGAS_API } from "@/lib";
 
 export type Dados = { inscritos: number; vagas: number } | null;
 export type Estado = "aberto" | "esgotado" | "encerrado" | "realizado";
@@ -27,7 +27,7 @@ async function buscar(): Promise<Dados> {
 
 export function estadoAtual(): Estado {
   if (Date.now() > new Date(EVENTO_FIM_ISO).getTime()) return "realizado";
-  if (Date.now() > new Date(DEADLINE_ISO).getTime()) return "encerrado";
+  if (INSCRICOES_ENCERRADAS || Date.now() > new Date(DEADLINE_ISO).getTime()) return "encerrado";
   if (dados && dados.inscritos >= dados.vagas) return "esgotado";
   return "aberto";
 }

@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { SITE_URL } from "@/lib";
+import { SITE_URL, INSCRICOES_ENCERRADAS } from "@/lib";
 import CookieConsent from "@/components/CookieConsent";
 import { Analytics } from "@vercel/analytics/next";
 
 const title = "Together Camp 2026.2 · Ekballo · 19 a 22 de novembro";
 const description =
-  "Acampamento de adolescentes e jovens (12 a 25 anos) da AD Bereana, no feriadão de 19 a 22/11 no Berecamp, em Arujá/SP. 80 vagas, inscrições até 15/11.";
+  "Acampamento de adolescentes e jovens (12 a 25 anos) da AD Bereana, no feriadão de 19 a 22/11 no Berecamp, em Arujá/SP. Inscrições encerradas; lista de espera pelo WhatsApp.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,7 +31,7 @@ export const viewport: Viewport = { themeColor: "#FFCD12", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" data-estado={INSCRICOES_ENCERRADAS ? "encerrado" : undefined}>
       <head>
         <link rel="preload" href="/fonts/big-shoulders-display-900.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/google-sans-flex.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />

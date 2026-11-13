@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Countdown from "@/components/Countdown";
-import { DEADLINE_ISO, EVENTO_FIM_ISO } from "@/lib";
+import { DEADLINE_ISO, EVENTO_FIM_ISO, INSCRICOES_ENCERRADAS } from "@/lib";
 import { useVagas } from "@/components/vagasStore";
 
 // Abaixo deste número, mostrar a barra seria prova social negativa: fica o contador.
@@ -13,7 +13,7 @@ export default function Vagas() {
   const [realizado, setRealizado] = useState(false);
   useEffect(() => {
     const ver = () => {
-      setEncerrado(Date.now() > new Date(DEADLINE_ISO).getTime());
+      setEncerrado(INSCRICOES_ENCERRADAS || Date.now() > new Date(DEADLINE_ISO).getTime());
       setRealizado(Date.now() > new Date(EVENTO_FIM_ISO).getTime());
     };
     ver();

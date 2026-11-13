@@ -13,14 +13,14 @@ import NeonWord from "@/components/NeonWord";
 import { PROGRAMACAO } from "@/data/programacao";
 import { LIDERES } from "@/data/lideres";
 import Lideres from "@/components/Lideres";
-import { SPOTIFY_PLAYLIST, FORM_URL, WHATSAPP_URL, ESPERA_URL, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
+import { SPOTIFY_PLAYLIST, FORM_URL, WHATSAPP_URL, ESPERA_URL, INSCRICOES_ENCERRADAS, CONVITE_MSG, INSTA_JOVEM, INSTA_IGREJA, MAPS_BERECAMP, MAPS_BEREANA, SITE_URL, VAGAS } from "@/lib";
 
 const faq: { q: string; a: string }[] = [
   { q: "Preciso ser da Bereana para ir?", a: "Não. O Together Camp é aberto a qualquer adolescente ou jovem de 12 a 25 anos, frequente ou não a igreja. Chama quem você quiser." },
   { q: "E se eu não conhecer ninguém?", a: "Muita gente chega sem conhecer quase ninguém e volta com amigos novos. São quatro dias juntos, com quarto, refeições e programação em grupo, e a liderança fica de olho para ninguém ficar sozinho." },
   { q: "Quanto custa e o que está incluso?", a: "R$ 500,00, que pode ser à vista no Pix ou em até 5x de R$ 100 no cartão de crédito (não há desconto à vista). Estão inclusos o ônibus de ida e volta, a hospedagem e a alimentação." },
   { q: "A pré-inscrição já garante a vaga?", a: "Não. A vaga só é confirmada depois do pagamento e da entrega dos documentos na recepção da Bereana. São 80 vagas." },
-  { q: "Até quando dá para se inscrever?", a: "Até 15/11/2026. Essa é a data final para a pré-inscrição, o pagamento e a entrega dos documentos assinados." },
+  { q: "Ainda dá para se inscrever?", a: "As inscrições estão encerradas. Quem quiser entrar na lista de espera deve mandar uma mensagem para a liderança no WhatsApp, (11) 9-8448-2098. Se surgir vaga, a liderança chama quem está na lista." },
   { q: "Sou menor de idade. Como faço?", a: "A pré-inscrição precisa ser preenchida pelo seu responsável legal. Ele também precisa entregar, impressa e assinada, a Autorização para Viagem e Participação em Acampamento e Uso de Imagem de Menor até 15/11. Sem ela, a participação pode ser impedida." },
   { q: "Por que o formulário pede login do Google?", a: "Porque ele recebe o comprovante de pagamento como arquivo, e o Google só aceita envio de arquivo com login. Tenha uma conta Google e o comprovante em mãos. Se o link abrir dentro do Instagram, abra no navegador do celular." },
   { q: "Tem sinal de celular?", a: "Vale contar com sinal instável. Leve sua Bíblia física: além de garantir a leitura, você foge das notificações." },
@@ -45,7 +45,7 @@ const jsonLd = {
         name: "Berecamp",
         address: { "@type": "PostalAddress", streetAddress: "Estrada dos Fernandes, 3801", addressLocality: "Arujá", addressRegion: "SP", addressCountry: "BR" },
       },
-      offers: { "@type": "Offer", price: "500.00", priceCurrency: "BRL", url: FORM_URL, availability: "https://schema.org/InStock", validThrough: "2026-11-15T23:59:59-03:00" },
+      offers: { "@type": "Offer", price: "500.00", priceCurrency: "BRL", url: FORM_URL, availability: INSCRICOES_ENCERRADAS ? "https://schema.org/SoldOut" : "https://schema.org/InStock", validThrough: "2026-11-15T23:59:59-03:00" },
       organizer: {
         "@type": "Organization",
         name: "Igreja Evangélica Assembléia de Deus Bereana",
@@ -83,15 +83,15 @@ function Cta({ local, pulse = false, aviso = true }: { local: string; pulse?: bo
       <a className="btn btn-primary est-esgotado" href={ESPERA_URL} target="_blank" rel="noopener" data-track="clique_espera" data-local={local}>
         Entrar na lista de espera <span className="arrow" aria-hidden="true">→</span>
       </a>
-      <a className="btn btn-primary est-encerrado" href={WHATSAPP_URL} target="_blank" rel="noopener" data-track="clique_whatsapp" data-local={local}>
-        Falar com a liderança <span className="arrow" aria-hidden="true">→</span>
+      <a className="btn btn-primary est-encerrado" href={ESPERA_URL} target="_blank" rel="noopener" data-track="clique_espera" data-local={local}>
+        Entrar na lista de espera <span className="arrow" aria-hidden="true">→</span>
       </a>
       {aviso && <p className="cta-note est-aberto">{AVISO_FORM}</p>}
       <p className="cta-note est-esgotado">As {VAGAS} vagas foram preenchidas. Deixe seu nome com a liderança para o caso de desistência.</p>
       <a className="btn btn-primary est-realizado" href={INSTA_JOVEM} target="_blank" rel="noopener" data-local={local}>
         Ver fotos no @bereanajovem <span className="arrow" aria-hidden="true">→</span>
       </a>
-      <p className="cta-note est-encerrado">As inscrições encerraram em 15/11.</p>
+      <p className="cta-note est-encerrado">As inscrições estão encerradas. Chame a liderança no WhatsApp, (11) 9-8448-2098, para entrar na lista de espera.</p>
       <p className="cta-note est-realizado">O Together Camp 2026.2 aconteceu de 19 a 22/11. Até o próximo!</p>
     </div>
   );
@@ -297,7 +297,7 @@ export default function Home() {
             <h2 id="convite">Não vai <em>sozinho</em></h2>
             <p className="lead est-aberto">Quem você quer levar? Manda o convite agora. Só tem {VAGAS} vagas.</p>
             <p className="lead est-esgotado">As vagas acabaram, mas ainda dá para chamar alguém para a lista de espera.</p>
-            <p className="lead est-encerrado">As inscrições encerraram. Manda o site para quem vai com você.</p>
+            <p className="lead est-encerrado">As inscrições encerraram, mas ainda dá para chamar alguém para a lista de espera.</p>
             <p className="lead est-realizado">Foi incrível. Manda para quem precisa saber do próximo Together Camp.</p>
             <Invite />
           </div>
@@ -355,7 +355,7 @@ export default function Home() {
                 <li>Alimentação</li>
               </ul>
               <Cta local="inscricao" pulse aviso={false} />
-              <p className="prazo"><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Inscrições encerradas em 15/11</span><span className="est-realizado">Evento realizado</span></p>
+              <p className="prazo"><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Inscrições encerradas</span><span className="est-realizado">Evento realizado</span></p>
             </section>
           </div>
         </section>
@@ -446,7 +446,7 @@ export default function Home() {
           <div className="wrap final-grid">
             <div>
               <h2 id="final">Bora pro <em>feriadão?</em></h2>
-              <p className="lead">19 a 22/11 no Berecamp. Inscrições até 15/11.</p>
+              <p className="lead">19 a 22/11 no Berecamp. Inscrições encerradas: entre na lista de espera.</p>
             </div>
             <div className="final-acoes">
               <Cta local="final" aviso={false} />
@@ -485,10 +485,10 @@ export default function Home() {
       <Stack />
 
       <div className="sticky-cta" role="region" aria-label="Inscrição rápida">
-        <span><span className="est-aberto"><RestamTexto /></span><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Encerradas</span><span className="est-realizado">Até o próximo!</span></span>
+        <span><span className="est-aberto"><RestamTexto /></span><span className="est-esgotado">Vagas esgotadas</span><span className="est-encerrado">Inscrições encerradas</span><span className="est-realizado">Até o próximo!</span></span>
         <a className="btn btn-primary est-aberto" href={FORM_URL} target="_blank" rel="noopener" data-track="clique_inscricao" data-local="fixo_celular">Garantir minha vaga</a>
         <a className="btn btn-primary est-esgotado" href={ESPERA_URL} target="_blank" rel="noopener" data-track="clique_espera" data-local="fixo_celular">Lista de espera</a>
-        <a className="btn btn-primary est-encerrado" href={WHATSAPP_URL} target="_blank" rel="noopener" data-track="clique_whatsapp" data-local="fixo_celular">Liderança</a>
+        <a className="btn btn-primary est-encerrado" href={ESPERA_URL} target="_blank" rel="noopener" data-track="clique_espera" data-local="fixo_celular">Lista de espera</a>
         <a className="btn btn-primary est-realizado" href={INSTA_JOVEM} target="_blank" rel="noopener" data-local="fixo_celular">@bereanajovem</a>
       </div>
     </>

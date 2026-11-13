@@ -20,14 +20,17 @@ export const VAGAS_API =
   process.env.NEXT_PUBLIC_VAGAS_API ||
   "https://script.google.com/macros/s/AKfycbxdjvP_WJbsxCbiRHOsPMV8FmuxBMPBqCvZve6rBoAKPBzcRmgR2s74tee2v8PQT8VIRw/exec";
 
-// Lista de espera (quando as 80 vagas esgotarem)
+// Inscrições encerradas pela liderança em 13/11/2026 (antes do prazo de 15/11). A partir daqui só lista de espera.
+export const INSCRICOES_ENCERRADAS = true;
+
+// Lista de espera: WhatsApp da liderança, (11) 9-8448-2098
 export const ESPERA_URL =
   "https://wa.me/5511984482098?text=" +
-  encodeURIComponent("Oi! Vi que as vagas do Together Camp 2026.2 esgotaram. Quero entrar na lista de espera.");
+  encodeURIComponent("Oi! Quero entrar na lista de espera do Together Camp 2026.2.");
 
 // Convite curto para compartilhar
 export const CONVITE_MSG =
-  "Bora comigo pro Together Camp? É de 19 a 22/11, no feriadão, no Berecamp (Arujá). Só 80 vagas, inscrições até 15/11. Dá uma olhada:";
+  "Bora comigo pro Together Camp? É de 19 a 22/11, no feriadão, no Berecamp (Arujá). As inscrições encerraram, mas dá para entrar na lista de espera. Dá uma olhada:";
 
 // Fim do evento: depois disso o site entra no estado "realizado"
 export const EVENTO_FIM_ISO = "2026-11-22T23:59:59-03:00";

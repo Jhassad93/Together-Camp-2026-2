@@ -3,7 +3,7 @@ import { useState } from "react";
 import { SITE_URL } from "@/lib";
 
 const MSG =
-  "Bora comigo pro Together Camp? É de 19 a 22/11, no feriadão, no Berecamp (Arujá). Só 80 vagas, inscrições até 15/11. Dá uma olhada:";
+  "Bora comigo pro Together Camp? É de 19 a 22/11, no feriadão, no Berecamp (Arujá). As inscrições encerraram, mas dá para entrar na lista de espera. Dá uma olhada:";
 
 export default function Invite() {
   const [copied, setCopied] = useState("");
